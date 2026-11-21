@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://dbo3fqrn4sfpw"]
+
+[ext_resource type="Script" uid="uid://iopwq5mp4ppr" path="res://home/home.gd" id="1_nh1o0"]
+[ext_resource type="Texture2D" uid="uid://csio8h1hck61i" path="res://maps/main.jpeg" id="1_rybx1"]
+[ext_resource type="FontFile" uid="uid://bbfvwf7t3jdl4" path="res://Cinzel/static/Cinzel-Bold.ttf" id="2_6xkb6"]
+[ext_resource type="FontFile" uid="uid://twpuc4penuye" path="res://Cinzel/static/Cinzel-Black.ttf" id="3_kfx81"]
+[ext_resource type="Texture2D" uid="uid://bd8jxcc5y7clt" path="res://assts/witch.png" id="4_6xkb6"]
+[ext_resource type="Texture2D" uid="uid://bgpsk78v4ldy4" path="res://assts/snowguy.png" id="5_kfx81"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5yj78"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_56u7t"]
+size = Vector2(401.43427, 229.81134)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wo5et"]
+size = Vector2(137.20892, 199.32452)
+
+[node name="Node2D" type="Node2D" unique_id=2002420229]
+script = ExtResource("1_nh1o0")
+
+[node name="Main" type="Sprite2D" parent="." unique_id=648642202]
+self_modulate = Color(0.42, 0.42, 0.42, 1)
+position = Vector2(612, 360)
+texture = ExtResource("1_rybx1")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=491611603]
+material = SubResource("CanvasItemMaterial_5yj78")
+offset_left = 363.0
+offset_top = 45.0
+offset_right = 790.0
+offset_bottom = 179.0
+mouse_default_cursor_shape = 3
+theme_override_colors/default_color = Color(1, 0.35686275, 0.43137255, 0.5176471)
+theme_override_fonts/normal_font = ExtResource("2_6xkb6")
+theme_override_fonts/bold_font = ExtResource("2_6xkb6")
+theme_override_font_sizes/normal_font_size = 85
+text = "Mature 1"
+
+[node name="story" type="RichTextLabel" parent="." unique_id=1696580607]
+anchors_preset = -1
+anchor_left = 0.031000001
+anchor_top = 0.052
+anchor_right = 0.031000001
+anchor_bottom = 0.052
+offset_left = 782.0
+offset_top = 108.0
+offset_right = 965.0
+offset_bottom = 138.25
+theme_override_colors/default_color = Color(0.56, 0.56, 0.56, 1)
+theme_override_fonts/normal_font = ExtResource("3_kfx81")
+theme_override_font_sizes/normal_font_size = 16
+text = "Boy and a Shadow"
+
+[node name="Button" type="Button" parent="." unique_id=557849754]
+offset_left = 452.0
+offset_top = 332.0
+offset_right = 700.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1187895254]
+offset_left = 9.0
+offset_top = 556.0
+offset_right = 242.0
+offset_bottom = 655.0
+theme_override_colors/default_color = Color(0.59, 0.59, 0.59, 1)
+theme_override_font_sizes/normal_font_size = 14
+text = "A to Left 
+D to Right 
+Space to JUMP 
+and HIT the Start button"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1412274074]
+offset_left = 315.0
+offset_top = 333.0
+offset_right = 602.0
+offset_bottom = 373.0
+rotation = -0.305751
+theme_override_colors/default_color = Color(1, 0.73, 0.73, 1)
+text = "HIT with SnowGuy to start!!!!"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." unique_id=193323676]
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 167.0
+offset_bottom = 73.0
+theme_override_font_sizes/normal_font_size = 10
+text = "Full Screen is suggested
+Made By Yousuf
+Open Source on GitHub 
+live on Itch "
+
+[node name="Witch2" type="Sprite2D" parent="." unique_id=435596428]
+position = Vector2(1338, 93.00001)
+scale = Vector2(0.35622317, 0.37857142)
+texture = ExtResource("4_6xkb6")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Witch2" unique_id=2044617098]
+scale = Vector2(0.99999994, 1)
+motion_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Witch2/CharacterBody2D" unique_id=1610726420]
+position = Vector2(15.440186, 9.24527)
+scale = Vector2(0.9999997, 1)
+shape = SubResource("RectangleShape2D_56u7t")
+
+[node name="Snowguy" type="Sprite2D" parent="." unique_id=1581847798]
+position = Vector2(1063, 532)
+scale = Vector2(0.25873017, 0.296)
+texture = ExtResource("5_kfx81")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Snowguy" unique_id=21669178]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Snowguy/CharacterBody2D" unique_id=275535543]
+position = Vector2(-12.561279, 23.64856)
+shape = SubResource("RectangleShape2D_wo5et")
