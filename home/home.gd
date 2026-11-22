@@ -18,7 +18,7 @@ func _ready():
 	start_button.pressed.connect(start_game)
 	
 func start_game():
-	get_tree().change_scene_to_file("res://main.tscn");
+	get_tree().change_scene_to_file("res://main/main.tscn");
 	
 func _process(delta):
 	var screen_width = get_viewport_rect().size.x

@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://8nrwcyh1bcyg"]
+
+[ext_resource type="Script" uid="uid://3nq4gpbu2kq6" path="res://main/main.gd" id="1_53q0u"]
+[ext_resource type="Texture2D" uid="uid://bd8jxcc5y7clt" path="res://assts/witch.png" id="3_c651c"]
+[ext_resource type="Texture2D" uid="uid://bamema5vkdpy0" path="res://assts/Animation.png" id="4_3wy1v"]
+[ext_resource type="Texture2D" uid="uid://bwpq3ygnpkjxt" path="res://maps/bg.webp" id="4_c651c"]
+[ext_resource type="Texture2D" uid="uid://c3gm03hctcmgx" path="res://assts/player.png" id="5_kfbq2"]
+[ext_resource type="Texture2D" uid="uid://du21ly8s6fqrt" path="res://assts/boy.png" id="6_4dugh"]
+[ext_resource type="Texture2D" uid="uid://d2c7qqe0v7u56" path="res://assts/platforms/board_right.png" id="7_4dugh"]
+[ext_resource type="Texture2D" uid="uid://cfu232lt8lkt0" path="res://assts/platforms/tree.png" id="8_67ri8"]
+[ext_resource type="Texture2D" uid="uid://dv1ua4qhnf3ph" path="res://assts/think.png" id="9_grrlh"]
+[ext_resource type="Texture2D" uid="uid://dr7w1tumursjr" path="res://assts/platforms/witch_imagine.png" id="10_0i4oc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kfbq2"]
+atlas = ExtResource("4_3wy1v")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dugh"]
+atlas = ExtResource("4_3wy1v")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wo5et"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kfbq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dugh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dugh")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=2007141312]
+script = ExtResource("1_53q0u")
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=2018628330]
+position = Vector2(577.50006, 325.5)
+scale = Vector2(1.1240234, 1.2686274)
+texture = ExtResource("4_c651c")
+
+[node name="Witch" type="Sprite2D" parent="." unique_id=676202155]
+position = Vector2(-54, 98)
+scale = Vector2(0.31974247, 0.35714287)
+texture = ExtResource("3_c651c")
+flip_h = true
+
+[node name="bot" type="AnimatedSprite2D" parent="." unique_id=389331728]
+position = Vector2(934, 490)
+scale = Vector2(0.2734375, 0.28125)
+sprite_frames = SubResource("SpriteFrames_wo5et")
+autoplay = "default"
+frame = 2
+frame_progress = 1.0
+flip_h = true
+
+[node name="Player" type="Sprite2D" parent="." unique_id=1149025795]
+position = Vector2(880.99994, 481)
+scale = Vector2(0.394231, 0.43392864)
+texture = ExtResource("5_kfbq2")
+
+[node name="Think" type="Sprite2D" parent="Player" unique_id=549288506]
+position = Vector2(205.46338, -245.43207)
+scale = Vector2(0.46618298, 0.50761867)
+texture = ExtResource("9_grrlh")
+
+[node name="WitchImagine" type="Sprite2D" parent="Player/Think" unique_id=1379540639]
+position = Vector2(-5.440918, -97.6073)
+scale = Vector2(0.47471496, 0.40534618)
+texture = ExtResource("10_0i4oc")
+
+[node name="Boy" type="Sprite2D" parent="." unique_id=939721760]
+position = Vector2(991, 483)
+scale = Vector2(0.1240236, 0.123291)
+texture = ExtResource("6_4dugh")
+flip_h = true
+
+[node name="BoardRight" type="Sprite2D" parent="." unique_id=1212021204]
+self_modulate = Color(0.41960785, 0.41960785, 0.41960785, 1)
+position = Vector2(195, 409)
+scale = Vector2(0.36388886, 0.44722223)
+texture = ExtResource("7_4dugh")
+
+[node name="Tree" type="Sprite2D" parent="." unique_id=702759261]
+self_modulate = Color(0.41960785, 0.41960785, 0.41960785, 1)
+position = Vector2(60, 378)
+texture = ExtResource("8_67ri8")
