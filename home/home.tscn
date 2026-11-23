@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dbo3fqrn4sfpw"]
 
 [ext_resource type="Script" uid="uid://iopwq5mp4ppr" path="res://home/home.gd" id="1_nh1o0"]
-[ext_resource type="FontFile" uid="uid://bbfvwf7t3jdl4" path="res://Cinzel/static/Cinzel-Bold.ttf" id="2_6xkb6"]
+[ext_resource type="FontFile" uid="uid://bbfvwf7t3jdl4" path="res://addons/Cinzel/static/Cinzel-Bold.ttf" id="2_6xkb6"]
 [ext_resource type="Texture2D" uid="uid://bwpq3ygnpkjxt" path="res://maps/bg.webp" id="2_nh1o0"]
-[ext_resource type="FontFile" uid="uid://twpuc4penuye" path="res://Cinzel/static/Cinzel-Black.ttf" id="3_kfx81"]
+[ext_resource type="FontFile" uid="uid://twpuc4penuye" path="res://addons/Cinzel/static/Cinzel-Black.ttf" id="3_kfx81"]
 [ext_resource type="Texture2D" uid="uid://bd8jxcc5y7clt" path="res://assts/witch.png" id="4_6xkb6"]
 [ext_resource type="Texture2D" uid="uid://bgpsk78v4ldy4" path="res://assts/snowguy.png" id="5_kfx81"]
 

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://owmeim4t6305"]
+
+[ext_resource type="Script" uid="uid://our3o6ew1fmp" path="res://GAME/GAME.gd" id="1_6lujh"]
+[ext_resource type="Texture2D" uid="uid://d1eogrpkxi44k" path="res://maps/main.webp" id="2_13f1k"]
+[ext_resource type="Texture2D" uid="uid://bh5gau2yet3h" path="res://maps/platform.png" id="3_xfq2l"]
+[ext_resource type="Texture2D" uid="uid://v7h3uxcv3gx1" path="res://maps/small.png" id="4_pe2ag"]
+[ext_resource type="Texture2D" uid="uid://2yntai0217jv" path="res://maps/big.png" id="5_hrt7s"]
+[ext_resource type="Texture2D" uid="uid://c61m4jdix7ghh" path="res://maps/left.png" id="6_bejml"]
+[ext_resource type="Texture2D" uid="uid://dkeq4qbd52gck" path="res://maps/slippery.png" id="7_m3h8k"]
+[ext_resource type="Texture2D" uid="uid://ces5r6xhtufpp" path="res://maps/right.png" id="8_pe2ag"]
+
+[node name="Node2D" type="Node2D" unique_id=959976361]
+script = ExtResource("1_6lujh")
+
+[node name="Main" type="Sprite2D" parent="." unique_id=695270874]
+position = Vector2(182.50006, 325)
+scale = Vector2(1.1279297, 1.1363636)
+texture = ExtResource("2_13f1k")
+
+[node name="Main2" type="Sprite2D" parent="." unique_id=1850400723]
+position = Vector2(1337, 324)
+scale = Vector2(1.1279297, 1.1363636)
+texture = ExtResource("2_13f1k")
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=1359827343]
+position = Vector2(-545.99994, 894)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_xfq2l")
+
+[node name="Small" type="Sprite2D" parent="." unique_id=586368904]
+position = Vector2(-732.9999, 903.99994)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_pe2ag")
+
+[node name="Big" type="Sprite2D" parent="." unique_id=445393585]
+position = Vector2(-278.99994, 856)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_hrt7s")
+
+[node name="Left" type="Sprite2D" parent="." unique_id=937921528]
+position = Vector2(57.00006, 854)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_bejml")
+
+[node name="Slippery" type="Sprite2D" parent="." unique_id=1289615886]
+position = Vector2(219.00012, 853)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("7_m3h8k")
+
+[node name="Right" type="Sprite2D" parent="." unique_id=1026692183]
+position = Vector2(399, 851)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_pe2ag")

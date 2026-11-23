@@ -88,5 +88,6 @@ texture = ExtResource("7_4dugh")
 
 [node name="Tree" type="Sprite2D" parent="." unique_id=702759261]
 self_modulate = Color(0.41960785, 0.41960785, 0.41960785, 1)
-position = Vector2(60, 378)
+position = Vector2(69, 387)
+scale = Vector2(0.8313954, 0.8907767)
 texture = ExtResource("8_67ri8")
